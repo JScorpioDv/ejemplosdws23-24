@@ -1,0 +1,12 @@
+# Services
+services:
+  # Apache + PHP
+  apache_php:
+    image: php:8.2-apache
+  # Preparamos un volumen para almacenar nuestro código
+    volumes:
+      - ./src/:/var/www/html
+    expose:
+      - 80
+    ports:
+      - 8080:80

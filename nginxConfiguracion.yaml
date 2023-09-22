@@ -1,0 +1,18 @@
+# Services
+services:
+
+  nginx:
+    image: nginx:1.25.2
+    ports:
+      - 8081:80
+    volumes:
+      - ./src:/var/www/php
+      - ./.config/docker/nginx/conf.d:/etc/nginx/conf.d # cargamos la configuración de un fichero externo
+    depends_on:
+      - php   # enlazamos nginx con php
+
+  php:
+    image: php:8.2-fpm
+    working_dir: /var/www/php
+    volumes:
+      - ./src:/var/www/php
