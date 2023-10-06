@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <form action="204datosPersonales.php" method="post">
+        <fieldset>
+            <label for="inputNombre">Introduce tu Nombre</label>
+            <input type="text" name="nombre" id="inputNombre">
+        </fieldset>
+
+        <fieldset>
+            <label for="inputApellidos">Introduce tus Apellidos</label>
+            <input type="text" name="apellidos" id="inputApellidos">
+        </fieldset>
+
+        <fieldset>
+            <label for="inputCorreo">Introduce tu correo</label>
+            <input type="email" name="correo" id="inputCorreo">
+        </fieldset>
+
+        <fieldset>
+            <label for="inputAnyo">Introduce tu Año de nacimiento</label>
+            <input type="number" name="anyo" id="inputAnyo" min="1930" max="2023">
+        </fieldset>
+
+        <fieldset>
+            <label for="inputTelefono">Introduce tu número de teléfono</label>
+            <input type="tel" name="telefono" id="inputTelefono">
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
