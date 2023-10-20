@@ -1,8 +1,8 @@
 <?php
 
-namespace videoclub;
+namespace Videoclub\Clases\Soportes;
 
-use videoclub\Soporte;
+use Clases\Soportes\Soporte;
 
 class Dvd extends Soporte
 {

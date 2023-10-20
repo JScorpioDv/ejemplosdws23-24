@@ -1,8 +1,8 @@
 <?php
 
-namespace videoclub;
+namespace Clases\Soportes;
 
-use videoclub\Soporte;
+use Clases\Soportes\Soporte;
 
 class Juego extends Soporte
 {

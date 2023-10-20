@@ -1,6 +1,6 @@
 <?php
 
-namespace videoclub;
+namespace Clases\Soportes;
 
 const IVA= 0.21;
 class Soporte
